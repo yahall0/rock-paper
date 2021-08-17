@@ -5,7 +5,7 @@ function userPlay() {
 
 function compPlay() {
     let options = ['rock', 'paper', 'scissors'];
-    return Math.floor(Math.random * 2);
+    return Math.floor(Math.random * 3);
 }
 
 function game(userInput, compInput) {

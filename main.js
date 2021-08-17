@@ -5,7 +5,7 @@ function userPlay() {
 
 function compPlay() {
     let options = ['rock', 'paper', 'scissors'];
-    return Math.floor(Math.random * 3);
+    return options[Math.floor(Math.random * 3)];
 }
 
 function game(userInput, compInput) {
@@ -49,11 +49,11 @@ function game(userInput, compInput) {
 
 let choice = 'y';
 
-while(choice === "y") {
+while(true) {
     choice = prompt("DO YOU WISH TO PLAY ROCK PAPER SCISSORS!!!!!???!!!?!?!?!?!?uwu(y/n)").toLowerCase();
     if(choice === 'n') {
         break;
     }
 
-    alert(game(userPlay(), compPlay()))
+    alert(game(userPlay(), compPlay()));
 }
